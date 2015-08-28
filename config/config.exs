@@ -22,6 +22,6 @@ config :phixer, :files,
 config :phixer, :s3,
   aws_s3_url: "s3.amazonaws.com",
   aws_bucket_name: "pix.thestorefront.com",
-  aws_cloudfront_url: "//d2zghkk09seiee.cloudfront.net",
+  aws_cloudfront_url: "//d2zghkk09seiee.cloudfront.net/",
   aws_access_key_id: "dev_access_key_id",
   aws_secret_access_key: "dev_secret_access_key"

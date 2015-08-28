@@ -11,7 +11,7 @@ defmodule Phixer.Storage do
 
   defp copy_url(%{new: new_url, old: old_url}) do
     IO.puts "\told_url: #{old_url}\n\tnew_url: #{new_url}"
-    :erlcloud_s3.copy_object(bucket_name, new_url, bucket_name, old_url, erlcloud_config)
+    :erlcloud_s3.copy_object(bucket_name, to_char_list(new_url), bucket_name, to_char_list(old_url), erlcloud_config)
   end
 
   defp bucket_name do

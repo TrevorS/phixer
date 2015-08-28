@@ -11,7 +11,7 @@ defmodule Phixer.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :erlcloud]]
+    [applications: [:logger, :ssl, :erlcloud]]
   end
 
   defp deps do
